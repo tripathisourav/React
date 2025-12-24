@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #FEFEFE;
+    color: black;
+}
+
+#all{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    height: 110px;
+    width: 100%;
+}
+
+#nav h5{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+#nv1{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+#nv1 img{
+    height: 37px;
+    width: 37px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+#bom{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#bom img{
+    height: 730px;
+    width: 900px;
+    position: relative;
+    right: 70px;
+}
+
+
+#bom #ln{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(193, 189, 189);
+    padding: 15px 20px;
+    position: relative;
+    bottom: -50px;
+}
+
+#ln h4{
+    rotate: -90deg;
+    font-size: 12px;
+    text-wrap: nowrap;
+    margin-bottom: 60px;
+    margin-top: 18px;
+}
+
+#ln #ln1{
+    height: 28rem;
+    width: 2px;
+    background-color: rgb(193, 189, 189);
+}
+
+
+#blck2{
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0px 40px 60px;
+    padding-left: 60px;
+}
+
+#frs{
+    display: flex;
+    gap: 70px;
+}
+
+
+.t25{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.t25 p{
+    font-size: 0.9rem;
+    color: rgb(121, 121, 121);
+}
+
+
+.t25 h2{
+    font-size: 3.5rem;
+    font-weight: 50;
+    color: rgb(79, 79, 79);
+}
+
+#sec{
+    position: relative;
+}
+
+#sec h1{
+    font-size: 14rem;
+    font-weight: 100;
+}
+
+#sec p{
+    position: absolute;
+    font-size: 1.2rem;
+    color: rgb(87, 87, 87);
+    padding-left: 15px;
+    bottom: 7px;
+}
+
+#sd{
+    padding-left: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+}

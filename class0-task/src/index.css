@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #F3F5F7;
+  font-size: clamp(12px, 1.2vw, 16px);
+}
+
+#view{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+#app {
+  /* height: 170vh; */
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+#Top{
+  height: 30vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 35px;
+  align-items: flex-start;
+  padding: 35px 15px;
+  padding-right: 45px;
+}
+
+#Top h5{
+  font-size: 0.9rem;
+  color: rgb(47, 47, 47);
+  border: 1px solid rgba(197, 196, 196, 0.775);
+  font-weight: 200;
+  border-radius: 1rem;
+  padding: 5px 10px;
+}
+
+#Top h3{
+  font-size: 2.35rem;
+  font-weight: 200;
+}
+
+
+#bx{
+  height: 150vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 1rem;
+  background-color: #FFFFFF;
+}
+
+#nv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nv #links{
+  display: flex;
+  gap: 25px;
+}
+#nv #links h5{
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+#nv h1{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#nv button{
+  background-color: #0D1A2D;
+  color: rgba(255, 255, 255, 0.893);
+  border: none;
+  border-radius: 20px;
+  padding: 8px 10px;
+  font-size: 0.5rem;
+}
+
+#main {
+  background-image: url("./assets/first.png");
+  background-size: cover;
+  background-position: center;
+}
+#main {
+  height: 35%;
+  width: 100%;
+  border-radius: 10px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+#dn{
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  align-items: center;
+}
+
+#dn button{
+  background-color: #0D1A2D;
+  color: rgb(216, 216, 216);
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+#btm{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#con{
+  display: flex;
+  align-items: center;
+}
+
+#con h5{
+  width: 47%;
+  color: rgb(235, 233, 233);
+  font-size: 0.6rem;
+  margin-right: 6px;
+}
+
+#con img{
+  border-radius: 25px;
+  height: 2.5vw;
+}
+
+#lnk{
+  display: flex;
+  gap: 10px;
+}
+
+#lnk h3{
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(231, 228, 228);
+}
+
+#section1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  padding-right: 10px;
+}
+
+#section1 button{
+  background-color: transparent;
+  border-radius: 15px;
+  color: rgb(71, 71, 71);
+  border: 1px solid rgb(198, 198, 198);
+  padding: 3px 8px;
+}
+
+#section1 h2{
+  width: 55%;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#im1{
+  /* height: 50vh; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#im1 img{
+  height: 27vh;
+  width: 18vw;
+}
+
+
+#facts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+}
+
+#facts h4{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(68, 68, 68);
+}
+
+#facts #stats{
+  display: flex;
+  align-items: center;
+  gap: 3.7rem;
+  margin-top: 25px;
+}
+
+#stats .stat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+#stats .stat h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(57, 57, 57);
+}
+
+#stats .stat h5{
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(96, 94, 94);
+}
+
+#last{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#last img{
+  height: 26vh;
+  width: 18vw;
+}
+
+#last #frs{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+  width: 25%;
+}
+
+#context{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+#context h2{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+#context button{
+  background-color: transparent;
+  border-radius: 15px;
+  color: rgb(71, 71, 71);
+  border: 1px solid rgb(198, 198, 198);
+  padding: 3px 8px;
+}
+
+#lstbtn{
+  background-color: #0D1A2D;
+  color: rgb(216, 214, 214);
+  padding: 5px 8px;
+  border-radius: 18px;
+  font-size: 0.8rem;
+}

@@ -1,7 +1,10 @@
 import React from 'react'
 import './index.css'
+
 import bg from './assets/bgc.png';
 import wn from './assets/winter.png';
+import we from './assets/we.png';
+import ic from './assets/ic.png';
 
 
 const App = () => {
@@ -9,15 +12,16 @@ const App = () => {
     <div id='app' className='px-3 w-full min-h-screen bg-black'>
       <div id='nav' className="py-7.25 flex flex-row justify-between items-center w-full h-10 text-[#bebebe]">
         <h2 className='text-[1.5rem]'>DVSY</h2>
-        <div className='flex align-center gap-3 text-[0.7rem]'>
+        <div className='flex align-center gap-3 text-[0.8rem]'>
           <h4 className='uppercase bg-[#222222] px-3 py-2  rounded-md'>Designers</h4>
           <h4 className='uppercase bg-[#222222] px-3 py-2  rounded-md'>Collabs</h4>
           <h4 className='uppercase bg-[#222222] px-3 py-2  rounded-md'>Events</h4>
           <h4 className='uppercase bg-[#222222] px-3 py-2  rounded-md'>Blog</h4>
           <h4 className='uppercase bg-[#222222] px-3 py-2  rounded-md'>Card</h4>
-          <h4 className='uppercase bg-[#222222] px-3 py-2  rounded-md'>Get IN TOUCH</h4>
+          <h4 className='uppercase bg-[#FF6900] px-3 py-2  rounded-md text-[#030202] font-[650]'>Get IN TOUCH</h4>
         </div>
       </div>
+
       <div className="h-[92vh] w-full bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${bg})` }}></div>
 
       
@@ -85,46 +89,54 @@ const App = () => {
         <div className="w-[48vw] bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${wn})` }}></div>
       </div>
 
-      <h1>OUR ADVANTAGES</h1>
+      <h1 className='text-center text-4xl text-white p-5'>OUR ADVANTAGES</h1>
 
-      <div>
-        <div className="w-[48vw] bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${wn})` }}></div>
-        <div>
-          <div>
-            <div>
-              <h3>Independent designers</h3>
-              <p>Our platform celebrates the ingenuity of Independent designers, offering a diverse range of fashion-forward garments that reflect the creativity and innovation of the artists behind them. Explore curated collections showcasing unique creations by Independent designers.</p>
+      <div className='flex justify-between mb-4'>
+        <div className="w-[48vw] bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${we})` }}></div>
+        <div className='w-[48vw] flex flex-col gap-4'>
+          <div className='flex p-7 bg-[#111111] rounded-xl'>
+            <div className='flex flex-col gap-10'>
+              <h3 className='text-[1.5rem] text-[#ffffff] uppercase'>Independent designers</h3>
+              <p className='text-[1rem] text-[#c3c3c3] font-normal w-[85%]'>Our platform celebrates the ingenuity of Independent designers, offering a diverse range of fashion-forward garments that reflect the creativity and innovation of the artists behind them. Explore curated collections showcasing unique creations by Independent designers.</p>
             </div>
-            <button className='text-[0.9rem]'><i class="ri-arrow-right-up-line border-2 px-1 py-1 rounded-4xl bg-[#bababaa4] mx-2.5  text-xl"></i>LEARN MORE</button>
+            <div className='flex items-end pb-8'>
+              <button className='text-[0.9rem] text-white content-end text-nowrap'><i class="ri-arrow-right-up-line border-2 px-1 py-1 rounded-4xl bg-[#bababaa4] mx-2.5  text-xl"></i>LEARN MORE</button>
+            </div>
           </div>
 
-          <div>
-            <div>
-              <h3>Independent designers</h3>
-              <p>Our platform celebrates the ingenuity of Independent designers, offering a diverse range of fashion-forward garments that reflect the creativity and innovation of the artists behind them. Explore curated collections showcasing unique creations by Independent designers.</p>
+          <div className='flex p-7 bg-[#111111] rounded-xl'>
+            <div className='flex flex-col gap-10'>
+              <h3 className='text-[1.5rem] text-[#ffffff] uppercase'>Exclusive & Uniquity</h3>
+              <p className='text-[1rem] text-[#c3c3c3] font-normal w-[85%]'>Indulge in curated collections showcasing exclusive, one-of-a-kind pieces, each with its own story and charm. Experience the value of unique fashion pieces that radiate sophistication and individuality curated for those who seek exclusivity.</p>
             </div>
-            <button className='text-[0.9rem]'><i class="ri-arrow-right-up-line border-2 px-1 py-1 rounded-4xl bg-[#bababaa4] mx-2.5  text-xl"></i>LEARN MORE</button>
+            <div className='flex items-end pb-8'>
+              <button className='text-[0.9rem] text-white content-end text-nowrap'><i class="ri-arrow-right-up-line border-2 px-1 py-1 rounded-4xl bg-[#bababaa4] mx-2.5  text-xl"></i>LEARN MORE</button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div>
-        <div className="w-[48vw] bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${wn})` }}></div>
-        <div>
-          <div>
-            <div>
-              <h3>Independent designers</h3>
-              <p>Our platform celebrates the ingenuity of Independent designers, offering a diverse range of fashion-forward garments that reflect the creativity and innovation of the artists behind them. Explore curated collections showcasing unique creations by Independent designers.</p>
+      <div className='flex flex-row-reverse justify-between pb-3'>
+        <div className="w-[48vw] bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${ic})` }}></div>
+        <div className='w-[48vw] flex flex-col gap-4'>
+          <div className='flex p-7 bg-[#111111] rounded-xl'>
+            <div className='flex flex-col gap-10'>
+              <h3 className='text-[1.5rem] text-[#ffffff] uppercase'>High Quality</h3>
+              <p className='text-[1rem] text-[#c3c3c3] font-normal w-[85%]'>Embrace superior craftsmanship with our meticulously curated, enduringly high quality garments. Discover garments crafted with utmost attention to detail and finest materials , promising longevity and timeless style.</p>
             </div>
-            <button className='text-[0.9rem]'><i class="ri-arrow-right-up-line border-2 px-1 py-1 rounded-4xl bg-[#bababaa4] mx-2.5  text-xl"></i>LEARN MORE</button>
+            <div className='flex items-end pb-8'>
+              <button className='text-[0.9rem] text-white content-end text-nowrap'><i class="ri-arrow-right-up-line border-2 px-1 py-1 rounded-4xl bg-[#bababaa4] mx-2.5  text-xl"></i>LEARN MORE</button>
+            </div>
           </div>
 
-          <div>
-            <div>
-              <h3>Independent designers</h3>
-              <p>Our platform celebrates the ingenuity of Independent designers, offering a diverse range of fashion-forward garments that reflect the creativity and innovation of the artists behind them. Explore curated collections showcasing unique creations by Independent designers.</p>
+          <div className='flex p-7 bg-[#111111] rounded-xl'>
+            <div className='flex flex-col gap-10'>
+              <h3 className='text-[1.5rem] text-[#ffffff] uppercase'>Eco-friendly</h3>
+              <p className='text-[1rem] text-[#c3c3c3] font-normal w-[85%]'>Join our commitment to sustainability with eco-friendly fashion options, stylish yet mindful of our planet. Explore guilt-free shopping with our exo-conscious collections, crafted with planet-friendly materials and ethical practices.</p>
             </div>
-            <button className='text-[0.9rem]'><i class="ri-arrow-right-up-line border-2 px-1 py-1 rounded-4xl bg-[#bababaa4] mx-2.5  text-xl"></i>LEARN MORE</button>
+            <div className='flex items-end pb-8'>
+              <button className='text-[0.9rem] text-white content-end text-nowrap'><i class="ri-arrow-right-up-line border-2 px-1 py-1 rounded-4xl bg-[#bababaa4] mx-2.5  text-xl"></i>LEARN MORE</button>
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: #333;
+  color: white;
+}
+
+.sec{
+  background-color: royalblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav button{
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 15px;
+}

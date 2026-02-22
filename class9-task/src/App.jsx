@@ -14,23 +14,33 @@ const App = () => {
 
   const [pokemon, setPokemon] = useState([])
 
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
 
   const API = "https://pokeapi.co/api/v2/pokemon?limit=9&offset=0";
 
   const fetchPokemon = async () => {
     try {
-      const res = await fetch(API);
-      const data = await res.json();
+      const res = await axios.get(API);
+      // console.log(res);
+      
+      const data = await res.data;
+      // console.log(data);
+      
 
       const detailedPokemonData = data.results.map(async (curPokemon) => {
         const res = await fetch(curPokemon.url);
+
+        // console.log(res);
+        
         const data = await res.json();
 
         // console.log(data);
-
+        
         return data;
       });
+
+      // console.log(detailedPokemonData);
+      
 
       const detailedResponses = await Promise.all(detailedPokemonData);
       console.log(detailedResponses);
@@ -48,8 +58,8 @@ const App = () => {
   return (
     <div className='min-h-screen w-full flex flex-wrap justify-center gap-25 p-10 pb-20 bg-black bg-'>
       {pokemon.map((el, idx) => {
-        let gradient;
-        let color;
+        let gradient = null;
+        let color = null;
 
         if (idx < 3) {
           gradient = "from-emerald-400 via-green-300 to-emerald-700";

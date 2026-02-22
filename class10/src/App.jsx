@@ -33,7 +33,7 @@ const App = () => {
 
 
   // useEffect(function(){
-  //   console.log('counter baar');
+  //   console.log('do dependency baar');
   // }, [counter, title]) // ek saath do dependencies bhi de skte hai 
 
 
@@ -61,7 +61,7 @@ const App = () => {
       <br />
       <br />
 
-      <h1>What is your Name</h1>
+      <h1>What is your {title}</h1>
       <input placeholder='Enter Name' type="text" value={title} onChange={ (e) => {
         setTitle(e.target.value)
       }} /> */}

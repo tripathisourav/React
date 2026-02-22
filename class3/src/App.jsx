@@ -16,6 +16,8 @@ const App = () => {
       {/* <h2 className='text-5xl bg-amber-800 text-amber-50'>
        {arr[0]},{user},{age}</h2> */}
 
+       {/* agr hme defined variables ko use krna hai toh hme {} use krne padenga*/}
+
       {/* <h1 className='w-full text-amber-50'>{arr.map(el => {
         return <h1>rs {el}</h1>
        })}</h1> */}
@@ -33,8 +35,8 @@ const App = () => {
       <Button text = 'Explore More'/> */}
 
       <div className='p-3 h-screen '>
-        {users.map(function(el){
-          return <Card user={el
+        {users.map(function(el, idx){
+          return <Card key = {idx} user={el
             
           }/>
         })}

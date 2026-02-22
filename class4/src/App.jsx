@@ -5,23 +5,23 @@ import Woman from './components/Woman'
 
 const App = () => {
 
-//   const user1 = {
-//      name: 'sorv',
-//      age: 21,
-//      gender:'male',
-//   }
+  const user1 = {
+     name: 'sorv',
+     age: 21,
+     gender:'male',
+  }
 
-//   const user2 = {
-//      name: 'Mike',
-//      age: 8,
-//      gender:'male',
-//   }
+  const user2 = {
+     name: 'Mike',
+     age: 8,
+     gender:'male',
+  }
 
-//   const user3 = {
-//      name: 'Sneha',
-//      age: 19,
-//      gender:'female',
-//   }
+  const user3 = {
+     name: 'Sneha',
+     age: 19,
+     gender:'female',
+  }
 
 
 
@@ -35,7 +35,7 @@ const App = () => {
       <Nav title = 'Joe'  color = 'blue' links = {['Home', 'Achievements', 'Next Fight', 'Gym']}/>
       <Nav title = 'Alex'  color = 'green' links = {['Gym', 'Prices', 'Timings', 'Contacts']}/> */}
 
-      {/* {user2.gender == 'male' ? user2.age > 10 ? <Men /> : <Woman /> : <Woman />} */}
+      {user2.gender == 'male' ? user2.age > 10 ? <Men /> : <Woman /> : <Woman />}
 
       <button 
         // onClick={btnClicked}

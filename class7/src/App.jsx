@@ -2,6 +2,11 @@ import React from 'react'
 import { useState } from 'react'
 import Card from './components/Card'
 
+// local storage basic storage available in browser for some data 5 to 10 mb
+// session storage jb tk browser chalu 
+
+// localStorage.clear() // to clear local storage
+
 const App = () => {
 
   const [name, setName] = useState('')
@@ -15,11 +20,11 @@ const App = () => {
     e.preventDefault()
 
     setAllUsers([...allUsers, { name, img, pos, des }])
-    console.log(allUsers);
+    // console.log(allUsers);
 
 
     // console.log('form submitted');
-    console.log(name, img, pos, des);
+    // console.log(name, img, pos, des);
 
     setName('')
     setImg('')
@@ -30,6 +35,7 @@ const App = () => {
   const deleteHandler = (e) => {
     // console.log('delete kr');
     // console.log(e.target.id);
+    console.log(e)
     const copyUsers = [...allUsers]
     copyUsers.splice(e.target.id, 1)
     setAllUsers(copyUsers)

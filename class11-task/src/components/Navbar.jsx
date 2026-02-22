@@ -19,7 +19,7 @@ const Navbar = () => {
                 <Link to='/login'><h5>Login</h5></Link>
 
                 <Link to='/join' className='bg-black text-white rounded-4xl font-medium px-2 py-0.5'>
-                    Join for Free <i class='ri-arrow-right-line'></i>
+                    Join for Free <i className='ri-arrow-right-line'></i>
                 </Link>
 
             </div>

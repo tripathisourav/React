@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.allProducts{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  gap: 20px;
+}
+
+.product{
+  text-align: center;
+  background-color: #fff;
+  display: block;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.product img{
+  height: 200px;
+  /* width: 100%; */
+  /* object-fit: cover; */
+  /* object-position: top; */
+}
+
+.product h2{
+  font-size: 20px;
+  margin-top: 20px;
+}

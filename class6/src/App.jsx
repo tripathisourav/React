@@ -49,9 +49,9 @@ const App = () => {
           // }}
           // value={'sorv'}  //value input form mein likhi reh jayegi
 
-          value = {username}
+          value = {username} // input ke andar kya likha hoga 
           onChange={(e)=>{
-            console.log(e.target.value);
+            // console.log(e.target.value);
             
             setUsername(e.target.value);
           }}

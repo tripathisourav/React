@@ -46,12 +46,12 @@ const App = () => {
       {/* '/' route hamesha banao */}
 
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About />}/>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
         <Route path='/courses' element={<Courses />}>
-          <Route path='/courses' element={<AllCourses/>} />
-          <Route path='/courses/kodex' element={<Kodex/>} />
-          <Route path='/courses/koder' element={<Koder/>} />
+          <Route path='/courses' element={<AllCourses />} />
+          <Route path='/courses/kodex' element={<Kodex />} />
+          <Route path='/courses/koder' element={<Koder />} />
         </Route>
       </Routes>
 
@@ -63,3 +63,57 @@ const App = () => {
 }
 
 export default App
+
+
+
+
+
+
+// works fine 
+
+{/* <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/courses' element={<Courses />}>
+          <Route index element={<AllCourses/>} />
+          <Route path='kodex' element={<Kodex/>} />
+          <Route path='koder' element={<Koder/>} />
+        </Route>
+      </Routes> */}
+
+
+
+
+// all courses component is not coming here because You have two routes with the exact same path:
+// When two routes have the same path, only one wins
+
+
+{/* <Routes>
+  <Route path='/' element={<Home />} />
+  <Route path='/about' element={<About />} />
+  <Route path='/courses' element={<Courses />} />
+
+  <Route path='/courses' element={<AllCourses />} />
+  <Route path='/courses/kodex' element={<Kodex />} />
+  <Route path='/courses/koder' element={<Koder />} />
+</Routes> */}
+
+
+
+
+
+
+
+// this works fine because 
+
+// /courses renders <Courses />
+
+// Inside <Courses />, the nested route renders
+
+// React Router injects child routes into <Outlet />
+
+//  <Route path='/courses' element={<Courses />}>
+//   <Route path='/courses' element={<AllCourses/>} />
+//   <Route path='/courses/kodex' element={<Kodex/>} />
+//   <Route path='/courses/koder' element={<Koder/>} />
+// </Route>
